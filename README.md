@@ -11,7 +11,7 @@ Repository ini akan membahas bagaimana cara menginstall MPI dan cara mengeksekus
 3. Update dan Upgrade package **sudo apt update && sudo apt upgrade**
 
 ## 2. Buat User Baru
-Lakukan di Master dan Slave
+Lakukan di **Master** dan **Slave**
 ### 2.1 Buat User <br>
     sudo adduser <nama user>
 ### 2.2 Beri Akses Root <br>
@@ -20,7 +20,7 @@ Lakukan di Master dan Slave
     su - mpiuser
 
 ## 3. Install MPICH
-Lakukan di Master dan Slave
+Lakukan di **Master** dan **Slave**
 ### 3.1 Install MPICH dan Paket Dokumentasi MPICH pada Sistem <br> 
     sudo apt-get install -y mpich-doc mpich
 ### 3.2 Cek Versi MPI <br> 
@@ -33,13 +33,13 @@ Lakukan di Master dan Slave
 ## 4. Konfigurasi File /etc/hosts
 Untuk memeriksa IP Adress pada komputer gunakan perintah *ip a*
 **sudo nano /etc/hosts**
-1. Untuk Master <br>
+1. Untuk **Master** <br>
    ![image1](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/4eebb045-9e2d-4c10-abc1-8cf37bb57704)
-2. Untuk Slave <br>
+2. Untuk **Slave** <br>
    ![Image2](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/1b49e18a-57ec-4284-8dac-daf4ef5a97d6)
 
 ## 5. Install SSH
-Lakukan di Master dan Slave <br>
+Lakukan di **Master** dan **Slave** <br>
 **sudo apt install openssh-server**
 ### 5.1 Buat Key <br> Lakukan pada master 
     ssh-keygen -t rsa
@@ -48,7 +48,7 @@ Lakukan di Master dan Slave <br>
 <br> Ganti <nama user> dengan user yang dibuat dan <host> dengan slave, lakukan pada semua slave.
 
 ## 6. Jalankan MPI
-### Lakukan pada master <br> 
+### Lakukan pada **Master** <br> 
     mpiexec -n <jumlah core> python -m mpi4py.bench helloworld<br>
 <img width="404" alt="percobaan" src="https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/8e1d12c1-2d12-4016-afd9-341b1eea56e7">
 
