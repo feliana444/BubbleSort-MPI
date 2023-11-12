@@ -49,7 +49,7 @@ Lakukan di **Master** dan **Slave** <br>
 
 ## 6. Jalankan MPI
 ### Lakukan pada **Master** <br> 
-    mpiexec -n <jumlah core> python -m mpi4py.bench helloworld<br>
+    mpiexec -n <jumlah core> python -m mpi4py.bench helloworld
 <img width="404" alt="percobaan" src="https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/8e1d12c1-2d12-4016-afd9-341b1eea56e7">
 
 # Cara Eksekusi Program Buble Sort Python Menggunakan MPI
