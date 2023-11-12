@@ -33,14 +33,14 @@ Repository ini akan membahas bagaimana cara menginstall MPI dan cara mengeksekus
 ## 4. Konfigurasi File /etc/hosts
 Untuk memeriksa IP Adress pada komputer gunakan perintah *ip a* <br>
 `sudo nano /etc/hosts`
-1. Untuk ***Master** 
+1. Untuk **Master** 
 ```sh
 172.20.10.7 master
 172.20.10.9 slave1
 172.20.10.5 slave2
 172.20.10.6 slave3
 ```
-2. Untuk ***Slave** <br>
+2. Untuk **Slave** <br>
 ```sh
 172.20.10.7 master
 172.20.10.9 slave1
