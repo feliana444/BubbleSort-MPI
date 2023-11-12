@@ -14,28 +14,21 @@ Repository ini akan membahas bagaimana cara menginstall MPI dan cara mengeksekus
 Lakukan di Master dan Slave
 ### 2.1 Buat User
 sudo adduser <nama user>
-
-![User1](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/c099b279-c267-4974-a398-a7db44696f3b)
 ### 2.2 Beri Akses Root
 sudo usermod -aG mpiuser
 ### 2.3 Masuk ke User yang telah dibuat
 su - mpiuser
-![User2](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/119fd0cb-09e3-46d8-9234-ee53cbb5fc89)
 
 ## 3. Install MPICH
 Lakukan di Master dan Slave
 ### 3.1 Install MPICH dan Paket Dokumentasi MPICH pada Sistem
 sudo apt-get install -y mpich-doc mpich
-![MPICH](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/c45360ad-cd87-4a76-b77b-c34ad2f1c904)
 ### 3.2 Cek Versi MPI
 mpirun --version
-![MPIrun](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/a0565b0e-73b1-4b9a-8105-55e6d87ea6a4)
 ### 3.3 Testing The Installation
 mpiexec -n <jumlah core> pyhton3 -m mpi4py.bench helloworld
-![3.3](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/28f624f5-3dca-4bd6-ac80-f625191988ac)
 ### 3.4 Install paket python mpi4py menggunakan pip untuk menjalankan python pada MPI
 pip install mpi4py -U
-![3.4](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/6e08850e-475e-4d8d-8aa1-00cb60b1f17e)
 
 ## 4. Konfigurasi File /etc/hosts
 sudo nano /etc/hosts
@@ -58,7 +51,8 @@ Ganti <nama user> dengan user yang dibuat dan <host> dengan slave, lakukan pada 
 ## 6. Jalankan MPI
 Lakukan pada master
 mpiexec -n <jumlah core> python -m mpi4py.bench helloworld
-![6](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/acf5cc49-7c82-42ce-857f-1de872c0fda5)
+<img width="404" alt="percobaan" src="https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/8e1d12c1-2d12-4016-afd9-341b1eea56e7">
+
 
 
 # Cara Eksekusi Program Buble Sort Python Menggunakan MPI
