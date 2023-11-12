@@ -33,10 +33,12 @@ pip install mpi4py -U
 ## 4. Konfigurasi File /etc/hosts
 sudo nano /etc/hosts
 ### 4.1 Untuk Master
-![4.1](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/971e7ce4-ac66-4be1-81ad-d8c8abfcc9be)
+![4.3](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/d93c6202-ee4d-446b-8343-2aa5a5484ea5)
+
 ### 4.2 Untuk Slave
 Slave
-![4.2](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/02b97841-45d5-4517-8e99-cca4950f84a9)
+
+
 
 ## 5. Install SSH
 Lakukan di Master dan Slave
@@ -51,6 +53,7 @@ Ganti <nama user> dengan user yang dibuat dan <host> dengan slave, lakukan pada 
 ## 6. Jalankan MPI
 Lakukan pada master
 mpiexec -n <jumlah core> python -m mpi4py.bench helloworld
+
 <img width="404" alt="percobaan" src="https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/8e1d12c1-2d12-4016-afd9-341b1eea56e7">
 
 
@@ -58,18 +61,23 @@ mpiexec -n <jumlah core> python -m mpi4py.bench helloworld
 # Cara Eksekusi Program Buble Sort Python Menggunakan MPI
 ## 1. Lakukan Penginputan SSH Untuk Semua Slave
 ssh-copy-id user@hostname_or_ip
-Slave 1
-![Slave1](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/7c446076-7900-45ee-a072-c3b4dbbdab56)
-![Slave2](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/38920fb0-b450-42cb-bc30-a98b6df7de9c)
-![Slave3](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/e3200e46-1179-43c2-92b4-f3c3c1da8d72)
+
+![image](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/ab0015e2-dd64-4d4e-abe3-3571a2b0c5aa)
+![image](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/670c8067-f5d0-4a50-9867-00ca8a800476)
+<img width="401" alt="copyssh3" src="https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/19f2d4b2-cd3a-4185-8ea3-f54279ca5f95">
+
 
 ## 2. Masukkan Program Buble Sort Python
 Berikut adalah kodingan yang kelompok saya gunakan
-![2.2](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/dbad251f-d8a9-4612-affc-e663b7933637)
+
+![G2](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/06f0602c-f77c-4e96-a9cc-2bcae83c3c68)
+
 
 ## 3. Copy File Python ke Semua Slave
 ~path$ scp /path/to/locate/bin * user@hostname_or_ip:path/to
-![2.3](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/2f8475d3-04ff-4cee-a797-af48ea5c4547)
+![image](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/d6455bd1-4c86-41e2-9116-f5648166b92c)
+
 
 ## 4. Hasil Percobaan
-![2.4](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/d1966178-fb3d-45b6-bcc1-3b4527a0bf10)
+![image](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/72d92ade-9125-4b55-b043-add4c0e6ee1f)
+
