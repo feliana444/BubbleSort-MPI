@@ -32,7 +32,7 @@ Lakukan di Master dan Slave
 
 ## 5. Install SSH
 Lakukan di Master dan Slave
-sudo apt install openssh-server
+**sudo apt install openssh-server**
 1. Buat Key <br> Lakukan pada master **ssh-keygen -t rsa**
 2. Copy key public to client <br> **ssh-copy-id <nama user>@<host>** <br>
    Ganti <nama user> dengan user yang dibuat dan <host> dengan slave, lakukan pada semua slave.
@@ -50,7 +50,7 @@ Berikut adalah kodingan yang kelompok saya gunakan <br>
 ![G2](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/06f0602c-f77c-4e96-a9cc-2bcae83c3c68)
 
 ## 3. Copy File Python ke Semua Slave
-~path$ scp /path/to/locate/bin * user@hostname_or_ip:path/to <br>
+**~path$ scp /path/to/locate/bin * user@hostname_or_ip:path/to** <br>
 ![image](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/d6455bd1-4c86-41e2-9116-f5648166b92c)
 
 ## 4. Hasil Percobaan
