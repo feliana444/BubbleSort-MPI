@@ -14,6 +14,7 @@ Repository ini akan membahas bagaimana cara menginstall MPI dan cara mengeksekus
 Lakukan di Master dan Slave
 ### 2.1 Buat User
 sudo adduser <nama user>
+
 ![User1](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/c099b279-c267-4974-a398-a7db44696f3b)
 ### 2.2 Beri Akses Root
 sudo usermod -aG mpiuser
