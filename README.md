@@ -12,39 +12,39 @@ Repository ini akan membahas bagaimana cara menginstall MPI dan cara mengeksekus
 
 ## 2. Buat User Baru
 Lakukan di Master dan Slave
-### 2.1 Buat User
+2.1 Buat User
 sudo adduser <nama user>
-### 2.2 Beri Akses Root
+2.2 Beri Akses Root
 sudo usermod -aG mpiuser
-### 2.3 Masuk ke User yang telah dibuat
+2.3 Masuk ke User yang telah dibuat
 su - mpiuser
 
 ## 3. Install MPICH
 Lakukan di Master dan Slave
-### 3.1 Install MPICH dan Paket Dokumentasi MPICH pada Sistem
+3.1 Install MPICH dan Paket Dokumentasi MPICH pada Sistem
 sudo apt-get install -y mpich-doc mpich
-### 3.2 Cek Versi MPI
+3.2 Cek Versi MPI
 mpirun --version
-### 3.3 Testing The Installation
+3.3 Testing The Installation
 mpiexec -n <jumlah core> pyhton3 -m mpi4py.bench helloworld
-### 3.4 Install paket python mpi4py menggunakan pip untuk menjalankan python pada MPI
+3.4 Install paket python mpi4py menggunakan pip untuk menjalankan python pada MPI
 pip install mpi4py -U
 
 ## 4. Konfigurasi File /etc/hosts
 sudo nano /etc/hosts
-### 4.1 Untuk Master
-#![image](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/13f4a711-0e1f-4991-9e11-8ab8d402aad4)
-## 4.2 Untuk Slave
+4.1 Untuk Master
+![image](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/13f4a711-0e1f-4991-9e11-8ab8d402aad4)
+4.2 Untuk Slave
 ![image](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/a8559898-3a0b-4c9e-a955-e70d55e7e0ec)
 ![image](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/0b8d6c31-691e-4218-804e-99075671afa8)
 
 ## 5. Install SSH
 Lakukan di Master dan Slave
 sudo apt install openssh-server
-### 5.1 Buat Key
+5.1 Buat Key
 Lakukan pada master
 ssh-keygen -t rsa
-### 5.2 Copy key public to client
+5.2 Copy key public to client
 ssh-copy-id <nama user>@<host>
 Ganti <nama user> dengan user yang dibuat dan <host> dengan slave, lakukan pada semua slave.
 
