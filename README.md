@@ -12,23 +12,16 @@ Repository ini akan membahas bagaimana cara menginstall MPI dan cara mengeksekus
 
 ## 2. Buat User Baru
 Lakukan di Master dan Slave
-1. Buat User <br>
-   **sudo adduser <nama user>**
-2. Beri Akses Root <br>
-   **sudo usermod -aG mpiuser**
-3. Masuk ke User yang telah dibuat <br>
-   **su - mpiuser**
+1. Buat User <br> **sudo adduser <nama user>**
+2. Beri Akses Root <br> **sudo usermod -aG mpiuser**
+3. Masuk ke User yang telah dibuat <br> **su - mpiuser**
 
 ## 3. Install MPICH
 Lakukan di Master dan Slave
-1. Install MPICH dan Paket Dokumentasi MPICH pada Sistem <br>
-   **sudo apt-get install -y mpich-doc mpich**
-2. Cek Versi MPI <br>
-   **mpirun --version**
-3. Testing The Installation <br>
-   **mpiexec -n <jumlah core> pyhton3 -m mpi4py.bench helloworld**
-4. Install paket python mpi4py menggunakan pip untuk menjalankan python pada MPI <br>
-   **pip install mpi4py -U**
+1. Install MPICH dan Paket Dokumentasi MPICH pada Sistem <br> **sudo apt-get install -y mpich-doc mpich**
+2. Cek Versi MPI <br> **mpirun --version**
+3. Testing The Installation <br> **mpiexec -n <jumlah core> pyhton3 -m mpi4py.bench helloworld**
+4. Install paket python mpi4py menggunakan pip untuk menjalankan python pada MPI <br> **pip install mpi4py -U**
 
 ## 4. Konfigurasi File /etc/hosts
 sudo nano /etc/hosts
@@ -41,23 +34,19 @@ sudo nano /etc/hosts
 ## 5. Install SSH
 Lakukan di Master dan Slave
 sudo apt install openssh-server
-1. Buat Key<br>
-   Lakukan pada master **ssh-keygen -t rsa**
-2. Copy key public to client <br>
-   **ssh-copy-id <nama user>@<host>** <br>
+1. Buat Key <br> Lakukan pada master **ssh-keygen -t rsa**
+2. Copy key public to client <br> **ssh-copy-id <nama user>@<host>** <br>
    Ganti <nama user> dengan user yang dibuat dan <host> dengan slave, lakukan pada semua slave.
 
 ## 6. Jalankan MPI
-Lakukan pada master<br>
-**mpiexec -n <jumlah core> python -m mpi4py.bench helloworld**<br>
+Lakukan pada master <br> **mpiexec -n <jumlah core> python -m mpi4py.bench helloworld**<br>
 <img width="404" alt="percobaan" src="https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/8e1d12c1-2d12-4016-afd9-341b1eea56e7">
 
 # Cara Eksekusi Program Buble Sort Python Menggunakan MPI
-## 1. Lakukan Penginputan SSH Untuk Semua Slave<br>
-**ssh-copy-id user@hostname_or_ip**
+## 1. Lakukan Penginputan SSH Untuk Semua Slave <br> **ssh-copy-id user@hostname_or_ip**
 
 ## 2. Masukkan Program Buble Sort Python <br>
-**Berikut adalah kodingan yang kelompok saya gunakan**
+Berikut adalah kodingan yang kelompok saya gunakan
 ![G2](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/06f0602c-f77c-4e96-a9cc-2bcae83c3c68)
 
 ## 3. Copy File Python ke Semua Slave
