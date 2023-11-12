@@ -31,7 +31,7 @@ Lakukan di **Master** dan **Slave**
     pip install mpi4py -U
 
 ## 4. Konfigurasi File /etc/hosts
-Untuk memeriksa IP Adress pada komputer gunakan perintah *ip a*
+Untuk memeriksa IP Adress pada komputer gunakan perintah *ip a* <br>
 **sudo nano /etc/hosts**
 1. Untuk **Master** <br>
    ![image1](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/4eebb045-9e2d-4c10-abc1-8cf37bb57704)
@@ -41,7 +41,7 @@ Untuk memeriksa IP Adress pada komputer gunakan perintah *ip a*
 ## 5. Install SSH
 Lakukan di **Master** dan **Slave** <br>
 **sudo apt install openssh-server**
-### 5.1 Buat Key <br> Lakukan pada master 
+### 5.1 Buat Key <br> Lakukan pada master <br>
     ssh-keygen -t rsa
 ### 5.2 Copy key public to client <br> 
     ssh-copy-id <nama user>@<host>
