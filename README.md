@@ -3,12 +3,12 @@ Repository ini akan membahas bagaimana cara menginstall MPI dan cara mengeksekus
 
 # Cara Install MPI pada Ubuntu Server
 ## Topologi
-![Topologi](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/f43765be-5ec9-4ce7-977f-b9264035b25d)
+![image](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/e8d5711a-a6a6-4aed-a4c5-1c10e8107d8a)
 
 ## 1. Langkah Awal
 1. Siapkan beberapa komputer dan tentukan satu komputer sebagai master dan beberapa komputer sebagai slave.
 2. Pastikan seluruh komputer terhubung dalam satu jaringan.
-3. Update dan Upgrade package 'sudo apt update && sudo apt upgrade'.
+3. Update dan Upgrade package **sudo apt update && sudo apt upgrade**
 
 ## 2. Buat User Baru
 Lakukan di Master dan Slave
@@ -46,7 +46,7 @@ Lakukan pada master <br> **mpiexec -n <jumlah core> python -m mpi4py.bench hello
 ## 1. Lakukan Penginputan SSH Untuk Semua Slave <br> **ssh-copy-id user@hostname_or_ip**
 
 ## 2. Masukkan Program Buble Sort Python <br>
-Berikut adalah kodingan yang kelompok saya gunakan
+Berikut adalah kodingan yang kelompok saya gunakan <br>
 ![G2](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/06f0602c-f77c-4e96-a9cc-2bcae83c3c68)
 
 ## 3. Copy File Python ke Semua Slave
