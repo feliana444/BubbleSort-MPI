@@ -45,7 +45,8 @@ Lakukan di **Master** dan **Slave** <br>
     ssh-keygen -t rsa
 ### 5.2 Copy key public to client <br> 
     ssh-copy-id <nama user>@<host>
-<br> Ganti <nama user> dengan user yang dibuat dan <host> dengan slave, lakukan pada semua slave.
+    
+#### Ganti <nama user> dengan user yang dibuat dan <host> dengan slave, lakukan pada semua slave.
 
 ## 6. Jalankan MPI
 ### Lakukan pada **Master** <br> 
