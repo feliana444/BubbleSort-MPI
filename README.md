@@ -5,7 +5,6 @@ Repository ini akan membahas bagaimana cara menginstall MPI dan cara mengeksekus
 ## Topologi
 ![image](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/f8d0a758-04d8-4092-b9a8-b7510e6e417a)
 
-
 ## 1. Langkah Awal
 1. Siapkan beberapa komputer dan tentukan satu komputer sebagai master dan beberapa komputer sebagai slave.
 2. Pastikan seluruh komputer terhubung dalam satu jaringan.
@@ -27,10 +26,9 @@ Lakukan di Master dan Slave
 ## 4. Konfigurasi File /etc/hosts
 **sudo nano /etc/hosts**
 1. Untuk Master <br>
-   ![image](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/4eebb045-9e2d-4c10-abc1-8cf37bb57704)
+   ![image1](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/4eebb045-9e2d-4c10-abc1-8cf37bb57704)
 2. Untuk Slave <br>
-   ![image](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/bfb70452-41c8-45ea-9ce0-1195a253ae1c)
-
+   ![Image2](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/1b49e18a-57ec-4284-8dac-daf4ef5a97d6)
 
 ## 5. Install SSH
 Lakukan di Master dan Slave
