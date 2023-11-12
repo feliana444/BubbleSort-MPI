@@ -24,7 +24,7 @@ Lakukan di Master dan Slave
 4. Install paket python mpi4py menggunakan pip untuk menjalankan python pada MPI <br> **pip install mpi4py -U**
 
 ## 4. Konfigurasi File /etc/hosts
-Untuk memeriksa IP Adress pada komputer gunakan perintah *ip a* *if config* *hostname -I*
+Untuk memeriksa IP Adress pada komputer gunakan perintah *ip a* / *if config* / *hostname -I* <br>
 **sudo nano /etc/hosts**
 1. Untuk Master <br>
    ![image1](https://github.com/feliana444/Eksekusi-Program-Buble-Sort-Python-Menggunakan-MPI/assets/145323449/4eebb045-9e2d-4c10-abc1-8cf37bb57704)
