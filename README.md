@@ -14,9 +14,11 @@ Repository ini akan membahas bagaimana cara menginstall MPI dan cara mengeksekus
 Lakukan di Master dan Slave
 1. Buat User
    sudo adduser <nama user>
+   
 2. Beri Akses Root
    sudo usermod -aG mpiuser
-3. Masuk ke User yang telah dibuat
+   
+4. Masuk ke User yang telah dibuat
    su - mpiuser
 
 ## 3. Install MPICH
